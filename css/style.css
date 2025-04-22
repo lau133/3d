@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* NAV */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    z-index: 1000;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff3333;
+}
+
+/* Banner */
+#banner {
+    position: relative;
+    height: 500px;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.info-container {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 10px;
+}
+
+/* Productos */
+
+/* Contenedores en cards */
+.modelo-3d-container {
+    width: 100%;
+    height: 200px;
+    background-color: #ffbbbb;
+  }
+
+  
+.productos {
+    padding: 40px 20px;
+}
+
+.productos-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#productos-tipos button {
+    background-color: #ff3333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.productos-catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.productos-card {
+    width: 250px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.productos-card:hover {
+    transform: scale(1.05);
+}
+
+.productos-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+}
+footer .social-media a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
