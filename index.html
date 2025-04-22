@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Autos 3D</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="importmap">
+        {
+          "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.149.0/examples/jsm/"
+          }
+        }
+    </script>
+</head>
+<body>
+    <nav>
+        <a href="#banner">Inicio</a>
+        <a href="#autos">Autos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <section id="banner">
+        <div id="canvas-container">
+            <div class="info-container">
+                <h2>Explora nuestros autos en 3D</h2>
+                <p>Observa los detalles de nuestros vehículos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="autos" class="productos">
+        <div class="productos-titulo">
+            <h2>Catálogo</h2>
+            <div id="productos-tipos">
+                <button>Porsche 917 LH</button>
+                <button>Maquina mutante</button>
+            </div>
+        </div>
+
+
+<div class="productos-catalogo">
+    <div class="productos-card">
+        <div class="modelo-3d-container" id="sedan-3d-container"></div>
+        <h3>Porsche 917 LH</h3>
+        <p>Personaliza y transformalo a tu gusto</p>
+    </div>
+    <div class="productos-card">
+        <div class="modelo-3d-container" id="pickup-3d-container"></div>
+        <h3>Maquina Mutante</h3>
+        <p>Potencia para los terrenos más difíciles.</p>
+    </div>
+</div>
+
+    <footer id="contacto">
+        <div class="footer-container">
+            <p>Contacto: ventas@tiendaautos3d.com</p>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/js.js"></script>
+</body>
+</html>
