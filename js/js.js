@@ -36,13 +36,13 @@ function crearVisor3D(containerId, modeloOBJ, modeloMTL, escala) {
   
   // 6. Cargar el modelo
   const cargadorMTL = new MTLLoader();
-  cargadorMTL.setPath('/modelos/');
+  cargadorMTL.setPath('./modelos/');
   cargadorMTL.load(modeloMTL, (materiales) => {
     materiales.preload();
     
     const cargadorOBJ = new OBJLoader();
     cargadorOBJ.setMaterials(materiales);
-    cargadorOBJ.setPath('/modelos/');
+    cargadorOBJ.setPath('./modelos/');
     cargadorOBJ.load(modeloOBJ, (objeto) => {
       // Ajustar escala
       objeto.scale.set(escala, escala, escala);
